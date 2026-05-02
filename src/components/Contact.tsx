@@ -60,10 +60,24 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-    }, 1200);
+
+    const lines = [
+      `*New Enquiry – Prime Fintax Website*`,
+      ``,
+      `*Name:* ${form.name}`,
+      `*Phone:* ${form.phone}`,
+      form.email ? `*Email:* ${form.email}` : null,
+      form.service ? `*Service:* ${form.service}` : null,
+      form.message ? `*Message:* ${form.message}` : null,
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    const waUrl = `https://wa.me/919820351901?text=${encodeURIComponent(lines)}`;
+    window.open(waUrl, "_blank", "noopener,noreferrer");
+
+    setLoading(false);
+    setSubmitted(true);
   };
 
   return (
