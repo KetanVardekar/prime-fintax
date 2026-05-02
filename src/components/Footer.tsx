@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Phone, Mail, MapPin, ArrowUp } from "lucide-react";
 
 const quickLinks = [
@@ -52,9 +53,13 @@ export default function Footer() {
             {/* Brand column */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-purple-700 flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-xl">P</span>
-                </div>
+                <Image
+                  src="/prime_fintax_consultancy.png"
+                  alt="Prime Fintax Consultancy"
+                  width={120}
+                  height={80}
+                  className="h-12 w-auto object-contain"
+                />
                 <div>
                   <div className="font-extrabold text-white text-lg leading-tight">
                     Prime Fintax

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
@@ -60,9 +61,15 @@ export default function Navbar() {
               onClick={() => handleNavClick("#home")}
               className="flex items-center gap-3 group"
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-900 to-purple-800 flex items-center justify-center shadow-lg group-hover:shadow-blue-900/40 transition-shadow">
-                <span className="text-white font-bold text-lg">P</span>
-              </div>
+              <Image
+                src="/prime_fintax_consultancy.png"
+                alt="Prime Fintax Consultancy"
+                width={120}
+                height={80}
+                className="h-18 w-auto object-contain"
+                priority
+                loading="eager"
+              />
               <div className="hidden sm:block">
                 <div
                   className={`font-bold text-base leading-tight ${
