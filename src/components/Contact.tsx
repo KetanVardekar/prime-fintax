@@ -102,7 +102,7 @@ export default function Contact() {
             <span className="gradient-text">Touch</span>
           </h2>
           <p className="max-w-2xl mx-auto text-lg text-slate-600">
-            Have a question or ready to get started? Fill out the form and we'll
+            Have a question or ready to get started? Fill out the form and we&apos;ll
             get back to you within 24 hours.
           </p>
         </div>
