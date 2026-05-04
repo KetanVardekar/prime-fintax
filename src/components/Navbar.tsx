@@ -17,14 +17,11 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-
-      const sections = navLinks.map((l) => l.href.replace("#", ""));
+const sections = navLinks.map((l) => l.href.replace("#", ""));
       for (let i = sections.length - 1; i >= 0; i--) {
         const el = document.getElementById(sections[i]);
         if (el && window.scrollY >= el.offsetTop - 100) {
@@ -47,13 +44,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-white/95 backdrop-blur-md shadow-lg"
-            : "bg-transparent"
-        }`}
-      >
+      <nav className="fixed top-0 left-0 right-0 z-50 shadow-lg" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
@@ -71,18 +62,10 @@ export default function Navbar() {
                 loading="eager"
               />
               <div className="hidden sm:block">
-                <div
-                  className={`font-bold text-base leading-tight ${
-                    scrolled ? "text-blue-900" : "text-white"
-                  }`}
-                >
+                <div className="font-bold text-base leading-tight text-blue-900">
                   Prime Fintax
                 </div>
-                <div
-                  className={`text-xs leading-tight ${
-                    scrolled ? "text-amber-600" : "text-amber-300"
-                  }`}
-                >
+                <div className="text-xs leading-tight text-amber-600">
                   Consultancy Services
                 </div>
               </div>
@@ -97,9 +80,7 @@ export default function Navbar() {
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                     activeSection === link.href.replace("#", "")
                       ? "bg-blue-900 text-white shadow-md"
-                      : scrolled
-                      ? "text-slate-700 hover:text-blue-900 hover:bg-blue-50"
-                      : "text-white/90 hover:text-white hover:bg-white/10"
+                      : "text-slate-700 hover:text-blue-900 hover:bg-blue-50"
                   }`}
                 >
                   {link.label}
@@ -119,11 +100,7 @@ export default function Navbar() {
 
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`lg:hidden p-2 rounded-lg transition-colors ${
-                  scrolled
-                    ? "text-slate-700 hover:bg-slate-100"
-                    : "text-white hover:bg-white/10"
-                }`}
+                className="lg:hidden p-2 rounded-lg transition-colors text-slate-700 hover:bg-slate-100"
                 aria-label="Toggle menu"
               >
                 {isOpen ? <X size={22} /> : <Menu size={22} />}
