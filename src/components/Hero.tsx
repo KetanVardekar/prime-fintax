@@ -149,7 +149,7 @@ export default function Hero() {
                     <div className="w-3 h-3 rounded-full bg-yellow-400" />
                     <div className="w-3 h-3 rounded-full bg-green-400" />
                   </div>
-                  <span className="text-white/60 text-xs font-mono">financial-dashboard.tsx</span>
+                  
                 </div>
 
                 {/* Dashboard content */}
