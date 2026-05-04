@@ -10,8 +10,8 @@ const trustItems = [
 ];
 
 const stats = [
-  { value: "500+", label: "Happy Clients" },
-  { value: "10+", label: "Years Experience" },
+  { value: "300+", label: "Happy Clients" },
+  { value: "6+", label: "Years Experience" },
   { value: "99%", label: "Accuracy Rate" },
   { value: "50+", label: "Services Offered" },
 ];
@@ -157,7 +157,7 @@ export default function Hero() {
                   <div className="flex items-center justify-between bg-white/10 rounded-xl p-4">
                     <div>
                       <div className="text-white/60 text-xs mb-1">Tax Savings</div>
-                      <div className="text-white font-bold text-xl">₹ 2,45,000</div>
+                      <div className="text-white font-bold text-xl">₹ 5,00,000</div>
                     </div>
                     <div className="w-12 h-12 bg-green-500/30 rounded-xl flex items-center justify-center">
                       <TrendingUp className="text-green-400" size={24} />
@@ -171,7 +171,7 @@ export default function Hero() {
                     </div>
                     <div className="bg-purple-600/30 rounded-xl p-4">
                       <div className="text-purple-200 text-xs mb-1">GST Returns</div>
-                      <div className="text-white font-bold text-lg">1200+</div>
+                      <div className="text-white font-bold text-lg">800+</div>
                     </div>
                   </div>
 
@@ -202,7 +202,7 @@ export default function Hero() {
               {/* Floating badges */}
               <div className="absolute -top-6 -right-6 bg-amber-500 text-white rounded-2xl px-4 py-3 shadow-xl animate-float" style={{ animationDelay: "1s" }}>
                 <div className="text-xs font-medium opacity-80">This Year</div>
-                <div className="font-bold text-sm">₹ 50L+ Saved</div>
+                <div className="font-bold text-sm">₹ 20L+ Saved</div>
               </div>
 
               <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl px-4 py-3 shadow-xl animate-float" style={{ animationDelay: "2s" }}>

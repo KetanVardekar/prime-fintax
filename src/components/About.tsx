@@ -83,15 +83,15 @@ export default function About() {
               <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-500/20 rounded-full blur-2xl" />
 
               <div className="relative z-10">
-                <div className="text-amber-400 text-6xl font-extrabold mb-2">10+</div>
+                <div className="text-amber-400 text-6xl font-extrabold mb-2">6+</div>
                 <div className="text-white text-xl font-semibold mb-6">Years of Excellence</div>
 
                 <div className="space-y-4">
                   {[
                     { label: "Individual Clients", value: "300+", color: "bg-blue-400" },
-                    { label: "Business Clients", value: "150+", color: "bg-purple-400" },
+                    { label: "Business Clients", value: "50+", color: "bg-purple-400" },
                     { label: "Housing Societies", value: "50+", color: "bg-amber-400" },
-                    { label: "Returns Filed", value: "5000+", color: "bg-green-400" },
+                    { label: "Returns Filed", value: "500+", color: "bg-green-400" },
                   ].map((item) => (
                     <div
                       key={item.label}
@@ -144,7 +144,7 @@ export default function About() {
               and housing societies alike.
             </p>
             <p className="text-slate-600 mb-8 leading-relaxed">
-              Our team of experienced Chartered Accountants, Tax Professionals, and
+              Our team of experienced Tax and 
               Compliance Experts work closely with you — ensuring you never miss a
               deadline, never overpay taxes, and always stay on the right side of
               the law.

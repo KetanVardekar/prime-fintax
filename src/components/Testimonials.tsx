@@ -99,7 +99,7 @@ export default function Testimonials() {
             <span className="gradient-text">Say About Us</span>
           </h2>
           <p className="max-w-2xl mx-auto text-lg text-slate-600">
-            Don't just take our word for it — hear from the businesses and
+            Don&apos;t just take our word for it — hear from the businesses and
             individuals who trust Prime Fintax with their finances.
           </p>
         </div>
@@ -194,8 +194,8 @@ export default function Testimonials() {
         <div className="grid sm:grid-cols-3 gap-4 mt-12">
           {[
             { emoji: "⭐", label: "Google Rating", value: "4.9/5" },
-            { emoji: "👥", label: "Happy Clients", value: "500+" },
-            { emoji: "📋", label: "Returns Filed", value: "5000+" },
+            { emoji: "👥", label: "Happy Clients", value: "300+" },
+            { emoji: "📋", label: "Returns Filed", value: "500+" },
           ].map((stat) => (
             <div
               key={stat.label}
