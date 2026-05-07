@@ -96,7 +96,6 @@ const services = [
     details: [
       "Annual Accounts Finalisation",
       "Statutory Audit Support",
-      "Tax Audit (3CD Report)",
       "ROC Filings",
       "Director KYC & Annual Returns",
       "Company Secretarial Work",
