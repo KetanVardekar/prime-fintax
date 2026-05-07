@@ -35,7 +35,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-slate-950 text-white relative overflow-hidden">
+    <footer className="text-white relative overflow-hidden" style={{ background: "linear-gradient(160deg, #3b1500 0%, #1e1060 45%, #0c1e42 100%)" }}>
       {/* Wave top */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
         <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="block w-full h-12">
@@ -53,13 +53,15 @@ export default function Footer() {
             {/* Brand column */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-5">
-                <Image
-                  src="/prime_fintax_consultancy.png"
-                  alt="Prime Fintax Consultancy"
-                  width={120}
-                  height={80}
-                  className="h-12 w-auto object-contain"
-                />
+                <div className="bg-white rounded-xl px-3 py-2 shrink-0">
+                  <Image
+                    src="/prime_fintax_consultancy.png"
+                    alt="Prime Fintax Consultancy"
+                    width={120}
+                    height={80}
+                    className="h-10 w-auto object-contain"
+                  />
+                </div>
                 <div>
                   <div className="font-extrabold text-white text-lg leading-tight">
                     Prime Fintax
