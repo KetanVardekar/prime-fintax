@@ -74,7 +74,7 @@ export default function Footer() {
 
               <p className="text-slate-400 text-sm leading-relaxed mb-5">
                 Your trusted partner in financial excellence. Delivering reliable,
-                accurate, and professional financial solutions since 2014.
+                accurate, and professional financial solutions since 2020.
               </p>
 
               <div className="italic text-amber-400 text-sm font-medium mb-5">
