@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, Mail, MapPin, ArrowUp } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowUp, BadgeCheck } from "lucide-react";
 
 const quickLinks = [
   { label: "Home", href: "#home" },
@@ -245,7 +245,22 @@ export default function Footer() {
           {/* Bottom bar */}
           <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-slate-500 text-sm text-center sm:text-left">
-              © {new Date().getFullYear()} Prime Fintax Consultancy Services. All rights reserved.
+              <div>
+                © {new Date().getFullYear()} Prime Fintax Consultancy Services. All rights reserved.
+              </div>
+              <div className="mt-1 text-xs">
+                Managed by <span className="text-slate-300 font-semibold">Aniket Pawar</span>
+                <span className="mx-2">•</span>
+                <a
+                  href="/vyapar-partner-certificate.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-amber-400 hover:text-amber-300 transition-colors"
+                >
+                  <BadgeCheck size={12} />
+                  Authorised Vyapar Partner
+                </a>
+              </div>
             </div>
             <div className="flex gap-4 text-slate-500 text-xs">
               <span>Privacy Policy</span>

@@ -11,6 +11,8 @@ import {
   Briefcase,
   ArrowRight,
   X,
+  BadgeCheck,
+  ExternalLink,
 } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -77,7 +79,7 @@ const services = [
     shortDesc: "Accurate books, financial statements and MIS reporting",
     details: [
       "Daily / Monthly Bookkeeping",
-      "Tally & Accounting Software",
+      "Tally & Vyapar Accounting Software",
       "Financial Statements Preparation",
       "MIS Reports & Analysis",
       "Bank Reconciliation",
@@ -87,7 +89,11 @@ const services = [
     lightBg: "bg-amber-50",
     iconColor: "text-amber-700",
     badgeBg: "bg-amber-100",
-    tag: "",
+    tag: "Vyapar Partner",
+    certificate: {
+      label: "Authorised Vyapar Partner",
+      href: "/vyapar-partner-certificate.pdf",
+    },
   },
   {
     icon: Building2,
@@ -283,6 +289,23 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
+                  {s.certificate && (
+                    <a
+                      href={s.certificate.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between gap-3 mb-6 px-4 py-3 rounded-xl bg-amber-50 border border-amber-200 hover:border-amber-300 transition-colors group"
+                    >
+                      <span className="flex items-center gap-2 text-sm font-semibold text-slate-800">
+                        <BadgeCheck size={18} className="text-amber-600" />
+                        {s.certificate.label}
+                      </span>
+                      <span className="flex items-center gap-1 text-xs font-semibold text-blue-800 group-hover:text-amber-600 transition-colors">
+                        View Certificate
+                        <ExternalLink size={12} />
+                      </span>
+                    </a>
+                  )}
                   <button
                     onClick={() => {
                       setActiveModal(null);

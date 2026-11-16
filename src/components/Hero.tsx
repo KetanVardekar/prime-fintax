@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { ArrowRight, CheckCircle2, TrendingUp, Shield, Award, PhoneCall } from "lucide-react";
+import { ArrowRight, CheckCircle2, TrendingUp, Shield, Award, PhoneCall, BadgeCheck, ExternalLink } from "lucide-react";
 
 const trustItems = [
   "Experienced Tax Professionals",
@@ -102,6 +102,23 @@ export default function Hero() {
                   <span className="text-blue-100 text-sm font-medium">{item}</span>
                 </div>
               ))}
+              <a
+                href="/vyapar-partner-certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 group w-fit"
+              >
+                <div className="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center flex-shrink-0">
+                  <BadgeCheck size={12} className="text-white" />
+                </div>
+                <span className="text-blue-100 text-sm font-medium">
+                  Authorised Vyapar Partner
+                </span>
+                <span className="flex items-center gap-1 text-amber-400 text-xs font-semibold group-hover:text-amber-300 transition-colors">
+                  View Certificate
+                  <ExternalLink size={12} />
+                </span>
+              </a>
             </div>
 
             {/* CTA Buttons */}

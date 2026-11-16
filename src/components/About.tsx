@@ -1,6 +1,6 @@
 "use client";
 
-import { Users, Target, Heart, Zap } from "lucide-react";
+import { Users, Target, Heart, Zap, BadgeCheck, ExternalLink } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const pillars = [
@@ -167,6 +167,33 @@ export default function About() {
                 </div>
               ))}
             </div>
+
+            {/* Certification */}
+            <a
+              href="/vyapar-partner-certificate.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 flex items-center gap-4 bg-white border border-amber-200 rounded-2xl p-4 shadow-sm hover:shadow-md hover:border-amber-300 transition-all group"
+            >
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-red-600 to-amber-500 flex items-center justify-center flex-shrink-0">
+                <BadgeCheck size={24} className="text-white" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-xs font-semibold text-amber-700 uppercase tracking-wider">
+                  Certified Partner
+                </div>
+                <div className="text-slate-900 font-bold">
+                  Authorised Partner of Vyapar
+                </div>
+                <div className="text-slate-500 text-xs">
+                  Aniket Pawar &middot; Valid 2026-27
+                </div>
+              </div>
+              <span className="flex items-center gap-1 text-sm font-semibold text-blue-800 group-hover:text-amber-600 transition-colors flex-shrink-0">
+                <span className="hidden sm:inline">View Certificate</span>
+                <ExternalLink size={16} />
+              </span>
+            </a>
           </div>
         </div>
 
